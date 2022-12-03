@@ -43,6 +43,8 @@ public class IndexServlet extends HttpServlet {
         em.close();
 
         request.setAttribute("tasks", tasks);
+        System.out.println("indexServlet1");
+        System.out.println(request.getSession().getId());
 
         RequestDispatcher rd=request.getRequestDispatcher("/WEB-INF/views/messages/index.jsp");
         rd.forward(request, response);
