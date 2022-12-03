@@ -3,7 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <c:import url="../layout/app.jsp">
     <c:param name="content">
-        <h2>タスク新規ページ</h2>
+        <h2>タスク作成ページ</h2>
         <form action="${pageContext.request.contextPath }/create" method="post">
             <c:import url="../layout/_form.jsp" />
         </form>
